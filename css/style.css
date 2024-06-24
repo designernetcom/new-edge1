@@ -66,7 +66,7 @@ Moz Selection
 ++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 :root {
-	--primary-color: #b8967e;
+	--primary-color: #354a9b;
 	--dark-color: #0a1d35;
 	--secondary-color: #878c97;
 	--grey-color: #faf6f3;
@@ -119,7 +119,7 @@ h6 {
 	font-family: "Roboto", sans-serif !important;
 	color: var(--dark-color);
 	font-style: normal;
-	text-transform: capitalize;
+	text-transform:none;
 	font-weight: 600;
 	margin: 0;
 	-ms-word-wrap: break-word;
@@ -195,7 +195,8 @@ a:hover {
 }
 
 p {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	color: #000000eb; 
 }
 
 img {
@@ -382,7 +383,7 @@ section {
 }
 
 .pq-bg-grey{
-	background-color: #d4e0f0ba;
+	background-color: #e7edf596;
 }
 
 .pq-bg-primary{
@@ -494,14 +495,14 @@ WordPress Core
 /*+++++++++++++++++++++++++++++++++++++
 Button Core
 ++++++++++++++++++++++++++++++++++++++++*/
-[type="button"],
+/* [type="button"],
 [type="reset"],
 [type="submit"] {
 	font-family: var(--title-fonts);
 	overflow: inherit;
 	position: relative;
 	width: auto;
-	background: var(--dark-color);
+	background: #354b9c;
 	color: var(--white-color);
 	text-transform: uppercase;
 	font-size: 16px;
@@ -524,20 +525,21 @@ Button Core
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	opacity: 1;
 }
 
 [type="button"]:hover,
 [type="reset"]:hover,
 [type="submit"]:hover {
 	color: var(--white-color);
-	background: var(--primary-color);
+	background: #7ebd24;
 
-}
+} */
 
 .pq-button {
 	/* font-family: var(--title-fonts); */
 	font-weight: 400;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 1px;
 	line-height: 2;
 	font-size: 16px;
@@ -2004,8 +2006,8 @@ OWL Carousel
 Section Title
 +++++++++++++++++++++++++++++++++++++++*/
 .pq-section-title.pq-style-1.text-center {
-	padding: 0 15em;
-	margin-bottom: 60px;
+    padding: 0 15em;
+    margin-bottom: 50px;
 }
 
 .pq-section-title.pq-style-1.text-center .pq-section-sub-title {
@@ -2071,7 +2073,7 @@ Section Title
 
 .pq-section-title.pq-style-1 .pq-section-main-title {
 	font-weight: 600;
-	font-size: 40px;
+	font-size: 35px;
     line-height: 45px;
 	z-index: 9;
 	color: var(--dark-color);
@@ -2079,6 +2081,7 @@ Section Title
 	margin: 0 0;
 	position: relative;
 	display: block;
+	/* text-transform: capitalize; */
 }
 
 .pq-section-title.pq-style-1 .pq-section-description {
@@ -2810,7 +2813,7 @@ header#pq-header.pq-header-style-3 .pq-bottom-header .pq-header-info-box .info-i
 }
 
 header#pq-header.pq-header-style-3 .pq-bottom-header .pq-header-info-box .info-icon-content h4 {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 22px;
 }
 
@@ -3287,7 +3290,7 @@ footer#pq-footer .pq-footer-top {
 }
 
 footer#pq-footer .widget:first-child {
-	margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 /*======= Footer Top list =======*/
@@ -4065,8 +4068,8 @@ Service Box
 }
 
 .pq-service-box.pq-style-6 .pq-service-icon i {
-	font-size: 35px;
-	line-height: 56px;
+    font-size: 25px;
+    line-height: 56px;
 }
 
 .pq-service-box.pq-style-6 .pq-service-description {
@@ -4824,7 +4827,7 @@ Team
     content: '';
     width: 100%;
     height: 100%;
-    background: var(--dark-color);
+    background: #0a1d35bd;
     opacity: 0;
     transition: all 0.5s ease;
     z-index: 1;
@@ -4833,7 +4836,12 @@ Team
 .pq-team-box.pq-style-5:hover .pq-team-img:before {
     opacity: 0.8;
 }
-
+.pq-mb-30{
+	margin-bottom: 30px;
+}
+.pq-mb-40{
+	margin-bottom: 40px;
+}
 .pq-team-box.pq-style-5 .pq-team-img img {
     width: 100%;
     height: 100%;
@@ -8174,13 +8182,14 @@ Custom CSS
 }
 
 .pq-pe-90{
-	padding-right: 90px;
+	padding-right: 60px;
 }
 
 .pq-applyform input,
 .pq-applyform textarea{
 	margin-bottom: 20px;
 	background-color: var(--white-color);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px;
 }
 
 .pq-applyform textarea{
@@ -8386,29 +8395,33 @@ Custom CSS
 	background-color: #05c234;
 	margin-top: 7px;
     margin-right: 8px;
-	padding: 3px 12px;
+	padding: 9px 12px;
 	border-radius: 5px;
+	line-height: 10px;
 }
 .pq-header-social .facebook {
     background-color: #00aaff;
     margin-top: 7px;
     margin-right: 8px;
-	padding: 3px 12px;
+	padding: 9px 12px;
 	border-radius: 5px;
+	line-height: 10px;
 }
 .pq-header-social .youtube {
     background-color: #ff0000;
     margin-top: 7px;
     margin-right: 8px;
-	padding: 3px 8px;
+	padding: 9px 8px;
 	border-radius: 5px;
+	line-height: 10px;
 }
 .pq-header-social .instagram {
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec574, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
     margin-top: 7px;
     margin-right: 8px;
-	padding: 3px 10px;
+	padding: 9px 10px;
 	border-radius: 5px;
+	line-height: 10px;
 }
 .info-icon-content a{
 	color: #000;
@@ -8429,5 +8442,87 @@ Custom CSS
 	padding-bottom: 60px;
 }
 .pq-section-title img{
-	margin-top: 20px;
+	margin-top: 25px;
+}
+.team .pq-section-title h5{
+	font-size: 30px !important;
+	line-height: 38px !important;
+	margin-bottom: 10px !important;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+/* .carousel-control-next {
+    right: -85%;
+} */
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    top: 35%;
+}
+.btext h2{
+	color: #fff;
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-shadow: 1px 0px black;
+}
+.btext p{
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-shadow: 0px 1px black;
+}
+@media(max-width:768px) {
+
+	.pq-counter-boxes {
+        padding: 40px 25px !important;
+    }
+	.pq-counter.pq-counter-style-4 .pq-counter-num-prefix h5.timer {
+		font-size: 40px;
+		line-height: 50px;
+		font-family: var(--title-fonts);
+		font-weight: 600;
+		color: #354a9b;
+	}
+
+	.pq-counter.pq-counter-style-4 .pq-counter-num-prefix .pq-counter-prefix {
+		font-size: 40px;
+		line-height: 50px;
+		font-family: var(--title-fonts);
+		font-weight: 600;
+		color: #354a9b;
+	}
+
+	.pq-service-box.pq-style-6 .pq-button.pq-button-icon {
+		/* background: var(--white-color); */
+		transition: all 0.5s ease;
+		font-size: 24px;
+		display: none;
+	}
+	
+}
+.mobv{
+	display: none;
+}
+.deskv{
+	display: block;
+}
+@media(max-width:479px) {
+    .mobv{
+        display: block;
+    }
+    .deskv{
+        display: none;
+    }
+	.why-us .paddmob{
+		padding: 15px !important;
+	}
 }

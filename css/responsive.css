@@ -57,7 +57,7 @@ Design and Developed by: Peacefulqode
 
     header#pq-header .pq-top-header .pq-header-social ul li a {
         font-size: 12px;
-        padding: 10px 15px;
+        /* padding: 10px 15px; */
     }
 
     header#pq-header .pq-top-header a.pq-header-contact {
@@ -134,11 +134,35 @@ Design and Developed by: Peacefulqode
 }
 
 @media(max-width:1199px) {
-
-    section{
-        padding: 90px 0;
+    .pq-contact-box {
+        padding: 16px 5px;
     }
-
+    .pq-contact-box .pq-contact-box-icon {
+        margin-right: 10px;
+    }
+    .pq-contact-box .pq-contact-box-icon i {
+        font-size: 20px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 46px;
+    }
+    .pq-contact-box .pq-contact-box-content .pq-contact-box-description {
+        margin: 0;
+        font-size: 15px;
+    }
+    section{
+        /* padding: 60px 50px; */
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .container{
+        padding: 0px 20px;
+    }
+    .pq-header-social .facebook {
+        background-color: #00aaff;
+        margin-top: 4px;
+    }
     header#pq-header .pq-top-header .pq-header-contact ul li {
         padding: 10px;
     }
@@ -491,6 +515,28 @@ Design and Developed by: Peacefulqode
     }
 }
 
+@media(max-width:1024px) {
+    .pq-header-social .facebook, .pq-header-social .whatsapp, .pq-header-social .youtube, .pq-header-social .instagram {
+        margin-top: 4px;
+    }
+    .pq-counter-boxes {
+        padding: 67px 40px;
+    }
+    .pq-counter.pq-counter-style-4 .pq-counter-num-prefix h5.timer {
+        font-size: 40px;
+        line-height: 50px;
+        /* font-family: var(--title-fonts); */
+        font-weight: 600;
+        color: #354a9b;
+    }
+    .pq-counter.pq-counter-style-4 .pq-counter-num-prefix .pq-counter-prefix {
+        font-size: 45px;
+    }
+    .pq-counter-boxes .pq-counter-title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
 @media(max-width:1023px) {
 
     /*++++++++++++++ Button Toggler +++++++++++++*/
@@ -509,8 +555,8 @@ Design and Developed by: Peacefulqode
         float: right;
         outline: none;
         margin: 0 0 0 30px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         color: var(--white-color);
         box-shadow: none;
         background: var(--dark-color);
@@ -697,7 +743,7 @@ Design and Developed by: Peacefulqode
 
     header#pq-header .pq-bottom-header .navbar-toggler {
 
-        background: var(--primary-color);
+        background: #354a9b;
     }
 
     header#pq-header .pq-bottom-header .navbar-toggler:hover {
@@ -992,10 +1038,15 @@ Design and Developed by: Peacefulqode
     }
 }
 
+@media(max-width:768px) {
+    .container{
+        padding:0px 20px;
+    }
+}
 @media(max-width:767px) {
 
     section{
-        padding: 60px 0;
+        padding: 40px 0;
     }
 
     header#pq-header .pq-top-header {
@@ -1676,9 +1727,12 @@ Design and Developed by: Peacefulqode
 }
 
 @media(max-width:479px) {
-
+    .container{
+        padding:0px 20px;
+    }
+   
     header#pq-header .pq-bottom-header .navbar .navbar-brand img {
-		height: 54px;
+        height: 65px;
 	}
 
 	header#pq-header.pq-header-default .pq-btn-container {
@@ -1713,7 +1767,9 @@ Design and Developed by: Peacefulqode
     .pq-single-post-usernav .pq-user {
         display: block;
     }
-
+    .about-us .row{
+        flex-direction: column-reverse;
+    }
     .pq-single-post-usernav .pq-user .pq-user-media img {
         width: 80px;
     }
@@ -1732,7 +1788,7 @@ Design and Developed by: Peacefulqode
     }
 
     .pq-section-title.pq-style-1 .pq-section-main-title {
-        font-size: 28px;
+        font-size: 25px;
         line-height: 36px;
     }
 

@@ -89,10 +89,10 @@ Design and Developed by: PeacefulQode
         ==================================================*/
         var view_width = jQuery(window).width();
         if (!jQuery('header').hasClass('pq-header-default') && view_width >= 1023)
-        {
-            var height = jQuery('header').height();
-            jQuery('.pq-breadcrumb').css('padding-top', height * 1.3);
-        }
+        // {
+        //     var height = jQuery('header').height();
+        //     jQuery('.pq-breadcrumb').css('padding-top', height * 1.3);
+        // }
         if (jQuery('header').hasClass('pq-header-default'))
         {
             jQuery(window).scroll(function() {

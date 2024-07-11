@@ -3,14 +3,6 @@
 
 
 
-/*
-
-Template: Lawfic - Attorney and Lawyer HTML Template
-Author: peacefulqode.com
-Version: 1.0
-Design and Developed by: Peacefulqode
-
-*/
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++
 [  Table of contents  ]
@@ -542,8 +534,8 @@ Button Core
 	text-transform: capitalize;
 	letter-spacing: 1px;
 	line-height: 2;
-	font-size: 16px;
-	padding: 10px 30px;
+	font-size: 14px;
+    padding: 6px 24px;
 	position: relative;
 	width: auto;
 	background: var(--dark-color);
@@ -754,8 +746,8 @@ Blog
 }
 
 .pq-blog-col-3 .pq-blog-post .pq-blog-contain .pq-blog-title {
-	font-size: 22px;
-	line-height: 30px;
+	font-size: 21px;
+	line-height: 24px;
 }
 
 .pq-blog-post .pq-blog-contain .pq-post-category {
@@ -2076,8 +2068,8 @@ Section Title
 
 .pq-section-title.pq-style-1 .pq-section-main-title {
 	font-weight: 600;
-	font-size: 35px;
-    line-height: 45px;
+	font-size: 30px;
+    line-height: 37px;
 	z-index: 9;
 	color: var(--dark-color);
 	padding: 0;
@@ -2261,7 +2253,7 @@ header#pq-header {
 	width: 100%;
 	clear: both;
 	background: var(--white-color);
-	z-index: 99;
+	z-index: 999999999;
 }
 
 header#pq-header.pq-header-sticky {
@@ -2330,7 +2322,7 @@ header#pq-header .pq-top-header .pq-header-contact ul li {
 	display: inline-block;
 	color: var(--white-color);
 	border-left: 1px solid rgba(255, 255, 255, 0.1);
-	padding: 10px 30px;
+	padding: 6px 30px;
 	float: left;
 }
 
@@ -2494,7 +2486,7 @@ header#pq-header .pq-bottom-header .navbar .navbar-nav li.current-menu-item .pq-
 }
 
 header#pq-header .pq-bottom-header .navbar .navbar-nav li .sub-menu li a {
-	line-height: 2;
+	line-height: 1.4;
 	text-transform: capitalize;
 	padding: 6px 15px;
 	display: inline-block;
@@ -3618,7 +3610,7 @@ footer#pq-footer .widget ul.pq-contact>li i {
 }
 
 footer#pq-footer .widget ul li a:hover {
-	color: var(--primary-color);
+	color: #7dbe22;
 }
 
 /*=========*/
@@ -3837,14 +3829,16 @@ Service Box
 /* style 3 */
 
 .pq-service-box.pq-style-3{
-	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	text-align: center;
 }
 
 .pq-service-box.pq-style-3 .pq-service-icon {
 	display: inline-block;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
-
+.pq-service-icon img{
+	width: 80px;
+}
 .pq-service-box.pq-style-3 .pq-service-icon i {
 	font-size: 64px;
 	line-height: 72px;
@@ -3859,9 +3853,13 @@ Service Box
 }
 
 .pq-service-box.pq-style-3 .pq-btn-container {
-	margin-top: 30px;
+	margin-top: 15px;
 }
-
+.pq-service-box p{
+	margin-bottom: 15px;
+	line-height: 1.5;
+	margin-top: 10px;
+}
 .pq-service-bg .pq-service-box.pq-style-3 {
 	padding: 45px 30px;
 	border-radius: 5px;
@@ -4426,7 +4424,7 @@ Team
     transform: scale(1);
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     border-radius: 5px;
 }
 
@@ -4486,10 +4484,13 @@ Team
 
 .pq-team-box.pq-style-1 .pq-team-info {
     background: transparent;
-    padding: 20px 15px 0;
+    padding: 8px 15px 7px;
     margin: 0px;
     text-align: center;
     position: relative;
+}
+.pq-team-box.pq-style-1 h5 {
+    font-size: 22px;
 }
 
 .pq-team-box.pq-style-1 .pq-team-info .pq-team-designation {
@@ -7777,15 +7778,15 @@ Icon Boxes
 }
 
 .pq-contact-box .pq-contact-box-icon{
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .pq-contact-box .pq-contact-box-icon i{
-	font-size: 33px;
+	font-size: 26px;
     display: inline-block;
-    width: 70px;
-    height: 70px;
-    line-height: 80px;
+    width: 60px;
+    height: 60px;
+    line-height: 70px;
     color: var(--white-color);
     background-color: #354a9b;
 	text-align: center;
@@ -8412,38 +8413,38 @@ Custom CSS
 	margin: 0;
 }
 .pq-header-social a i{
-	font-size: 17px;
+	font-size: 15px;
 	
 }
 .pq-header-social .whatsapp{
 	background-color: #05c234;
-	margin-top: 7px;
+    margin-top: 4px;
     margin-right: 8px;
-	padding: 9px 12px;
-	border-radius: 5px;
-	line-height: 10px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    line-height: 10px;
 }
 .pq-header-social .facebook {
-    background-color: #00aaff;
-    margin-top: 7px;
+	background-color: #00aaff;
+    margin-top: 4px;
     margin-right: 8px;
-	padding: 9px 12px;
-	border-radius: 5px;
-	line-height: 10px;
+    padding: 7px 11px;
+    border-radius: 5px;
+    line-height: 10px;
 }
 .pq-header-social .youtube {
     background-color: #ff0000;
-    margin-top: 7px;
+    margin-top: 4px;
     margin-right: 8px;
-	padding: 9px 8px;
+	padding: 7px 7px;
 	border-radius: 5px;
 	line-height: 10px;
 }
 .pq-header-social .instagram {
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec574, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    margin-top: 7px;
+    margin-top: 4px;
     margin-right: 8px;
-	padding: 9px 10px;
+	padding: 7px 9px;
 	border-radius: 5px;
 	line-height: 10px;
 }
@@ -8483,14 +8484,14 @@ Custom CSS
 } */
 .carousel-caption {
     position: absolute;
-    right: 15%;
+    right: 25%;
     bottom: 1.25rem;
-    left: 15%;
+    left: 25%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: center;
-    top: 35%;
+    top: 28%;
 	z-index: 111111;
 }
 .btext h2{
@@ -8668,3 +8669,47 @@ Custom CSS
    .div-slide {
 	position: relative;
    }
+   .ector-data ul li{
+	list-style-type: disc !important;
+   }
+   @keyframes page-banner {
+	0%   { background-size: 100% auto; }
+	50% { background-size: 140% auto; }
+	100% { background-size: 100% auto; }
+}
+
+@keyframes home-banner {
+	0%   { scale: 1 }
+	50% { scale: 1.2 }
+	100% { scale: 1 }
+}
+.page-banner{
+	animation: page-banner 10s linear infinite;
+}
+
+.home-banner{
+	animation: home-banner 10s linear infinite;
+}
+.carousel-inner h2{
+	color: #fff;
+}
+.carousel-inner p {
+    color: #fff;
+    text-shadow: 0px 1px #000;
+    margin-top: 5px;
+    margin-bottom: 15px;
+	line-height: 1.6;
+}
+.carousel-dark .carousel-caption {
+    color: #000;
+}
+.carousel-dark .text-ban {
+    /* background-color: #00000036; */
+	padding: 50px 30px;
+}
+.carousel-item img {
+    filter: brightness(0.8);
+}
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter: none;
+}

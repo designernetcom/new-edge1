@@ -19,7 +19,7 @@ Design and Developed by: Peacefulqode
 @media(max-width:1399px) {
 
     header#pq-header .pq-bottom-header .navbar .navbar-nav li {
-        margin-right: 28px;
+        margin-right: 24px;
     }
 
     header#pq-header .pq-bottom-header .navbar .navbar-nav li .sub-menu li:hover>.sub-menu {
@@ -1063,7 +1063,7 @@ Design and Developed by: Peacefulqode
     }
 
     header#pq-header .pq-top-header {
-        display: none;
+        /* display: none; */
     }
     
     header#pq-header.pq-header-default .pq-btn-container {
@@ -1739,11 +1739,25 @@ Design and Developed by: Peacefulqode
     }
 }
 
+@media(max-width:767px) {
+    .pq-header-social{
+        width: 50%;
+    }
+}
 @media(max-width:479px) {
     .container{
         padding:0px 20px;
     }
-   
+    .pq-header-social{
+        width: 50%;
+    }
+    .carousel-item img {
+        filter: brightness(0.6);
+        height: 240px;
+    }
+    .helpline {
+        padding: 20px 0px 50px 0px;
+    }
     header#pq-header .pq-bottom-header .navbar .navbar-brand img {
         height: 65px;
 	}

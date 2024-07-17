@@ -329,8 +329,8 @@ select.form-control {
 	width: 100%;
 	float: none;
 	padding: 0 30px 0 15px;
-	height: 54px;
-	line-height: 54px;
+	height: 30px;
+	line-height: 30px;
 	outline: none;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -690,31 +690,37 @@ Blog
 
 .pq-blog-post {
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 5px;
-    margin-bottom: 30px;
-	background: #334b9a1a;
+	height: 100%;
+	background:#334b9a1c;
 	display: inline-block;
 	width: 100%;
 	border-radius: 5px;
+	padding: 20px 0px;
 }
-
+.mb-30{
+	margin-bottom: 30px;
+}
 .pq-blog-post .pq-post-media {
 	overflow: hidden;
 	position: relative;
 	border-radius: 5px;
+	text-align: center;
 }
-
 .pq-blog-post .pq-post-media img {
-	width: 100%;
-	-webkit-transform: scale(1);
+	width: 100px;
+}
+.pq-blog-post .pq-post-media img {
+	/* width: 100%; */
+	/* -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: 0.5s ease-in-out;
-	transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out; */
 }
 
-.pq-blog-post:hover .pq-post-media img {
+/* .pq-blog-post:hover .pq-post-media img {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
-}
+} */
 
 .pq-blog-post .pq-blog-contain {
 	padding: 20px 21px;
@@ -771,9 +777,10 @@ Blog
 }
 
 .pq-blog-post .pq-blog-contain .pq-blog-title {
-	font-size: 28px;
-	line-height: 36px;
+	font-size: 25px;
+	line-height: 30px;
 	margin-top: 0;
+	margin-bottom: 10px;
 }
 
 .pq-blog-post .pq-blog-contain .pq-blog-title+.pq-btn-container {
@@ -2313,7 +2320,7 @@ header#pq-header .pq-top-header .pq-header-contact.text-right ul {
 }
 
 header#pq-header .pq-top-header .pq-header-contact ul {
-	margin: 0;
+	/* margin: 0; */
 	padding: 0;
 }
 
@@ -2371,7 +2378,7 @@ header#pq-header .pq-top-header .pq-header-social ul li a {
 header#pq-header .pq-top-header ul li a:hover {
 	color: var(--white-color);
 	background: #354a9c;
-	border: 1px solid #fff;
+/* 	border: 1px solid #fff; */
 }
 
 header#pq-header .pq-top-header .pq-header-social ul li:last-child {
@@ -5767,7 +5774,8 @@ Client
     -webkit-transition: -webkit-transform .3s ease;
     -moz-transition: -moz-transform .3s ease;
     transition: transform .3s ease;
-	border: 1px solid #354a9b
+	border: 1px solid #354a9b;
+	padding: 5px;
 }
 
 .pq-client-box.pq-style-1 a:hover .pq-client-img {
@@ -8418,7 +8426,7 @@ Custom CSS
 }
 .pq-header-social .whatsapp{
 	background-color: #05c234;
-    margin-top: 4px;
+    margin-top: 5px;
     margin-right: 8px;
     padding: 7px 10px;
     border-radius: 5px;
@@ -8426,7 +8434,7 @@ Custom CSS
 }
 .pq-header-social .facebook {
 	background-color: #00aaff;
-    margin-top: 4px;
+    margin-top: 5px;
     margin-right: 8px;
     padding: 7px 11px;
     border-radius: 5px;
@@ -8434,7 +8442,7 @@ Custom CSS
 }
 .pq-header-social .youtube {
     background-color: #ff0000;
-    margin-top: 4px;
+    margin-top: 5px;
     margin-right: 8px;
 	padding: 7px 7px;
 	border-radius: 5px;
@@ -8442,7 +8450,7 @@ Custom CSS
 }
 .pq-header-social .instagram {
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec574, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    margin-top: 4px;
+    margin-top: 5px;
     margin-right: 8px;
 	padding: 7px 9px;
 	border-radius: 5px;
@@ -8563,7 +8571,7 @@ Custom CSS
 	margin-bottom: 20px;
 }
 .pq-client-img{
-	border: 1px solid #0000001a;
+	border: 1px solid #0000003d;
 }
 .pro-img img{
 	width: 100%;
@@ -8708,8 +8716,115 @@ Custom CSS
 	padding: 50px 30px;
 }
 .carousel-item img {
-    filter: brightness(0.8);
+    filter: brightness(0.6);
 }
 .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
     filter: none;
+}
+.helpline{
+	padding: 60px 0px 70px 0px;
+}
+.pq-counter-boxed{
+	padding: 30px;
+}
+.sticky-icon  {
+	z-index: 11111;
+	position: fixed;
+	top: 40%;
+	right: 0px;
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+  }  
+  .sticky-icon a  {
+	  /* transform:translate(160px,0px); */
+	  border-radius:50px 0px 0px 50px;
+	  text-align:left;
+	  margin:2px;
+	  text-decoration:none;
+	  text-transform:uppercase;
+	  padding:4px;
+	  font-size:18px;
+	  font-family:'Oswald', sans-serif;
+	  transition:all 0.8s;}
+  .sticky-icon a:hover  {
+	  color:#FFF;
+	  /* transform: translate(55px,0px); */
+	}	
+  .sticky-icon a:hover i  {
+	  transform:rotate(360deg);}
+  /*.search_icon a:hover i  {
+	  transform:rotate(360deg);}*/
+  .Facebook  {
+	  background-color:#3b5998;
+	  color:#FFF;}
+	  
+  .Youtube  {
+	  background-color:green;
+	  color:#FFF;}
+	  
+  .Twitter  {
+	  background-color:#0077B5;
+	  color:#FFF;}
+	  
+  .Instagram  {
+	  background: 
+	  radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), 
+	  linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%),
+	  radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), 
+	  radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), 
+	  radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), 
+	  radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), 
+	  radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), 
+	  radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%);
+  
+	  color:#FFF;}
+	  
+  .Google  {
+	  background-color:blue;
+	  color:#FFF;}						
+  .sticky-icon a i {
+	  background-color: #FFF;
+	  height: 33px;
+	  width: 33px;
+	  color: #3b5998;
+	  text-align: center;
+	  line-height: 35px;
+	  border-radius: 50%;
+	  margin-right: 3px;
+	  transition: all 0.5s;
+	  margin-left: 1px;
+  }
+  .sticky-icon a i.fa-facebook-f  {
+	  background-color:#FFF;
+	  color:#3b5998;}
+	  
+  .sticky-icon a i.fa-google-plus-g  {
+	  background-color:#FFF;
+	  color:#d34836;}
+	  
+  .sticky-icon a i.fa-instagram  {
+	  background-color:#FFF;
+	  color:#c63287;}
+	  .sticky-icon a i.fa-linkedin {
+	  background-color:#FFF;
+	  color:#0077B5;}
+	  
+  .sticky-icon a i.fa-whatsapp  {
+	  background-color:#fff;
+	  color:green;}
+	  
+  .sticky-icon a i.fa-phone  {
+	  background-color:#fff;
+	  color:blue;}
+	  
+  .sticky-icon a i.fa-twitter  {
+	  background-color:#FFF;
+	  color:#53c5ff;}
+
+.pq-header-contact{
+	text-align: left;
+}
+.mtopv ul{
+	margin: 0 !important;
 }
